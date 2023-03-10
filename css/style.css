@@ -1,0 +1,320 @@
+/* Buat variabel default warna */
+:root {
+    --my-background-color: #D9D9D9;
+    --color-button: #963751;
+}
+
+body{
+    font-family: 'Jaldi', sans-serif;
+}
+/*section Header*/
+.header {
+    /* background-color: #FE7272; */
+    background: linear-gradient(to right, #FE7272, #ec5b5b);
+    padding: 10px 0 0 0;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 6fr 4fr 2fr;
+    align-items: center;
+}
+
+.header-container_logo {
+    width: 84px;
+}
+
+.header-container_search {
+    height: 45px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    padding: 8px 40px;
+}
+
+.header-container_button {
+    width: fit-content;
+    height: 45px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #963751;
+    color: #fff;
+}
+.header-navbar{
+    padding: 6px 0;
+    /* background-color: #963751; */
+    background: linear-gradient(to right, #aa4460, #963751);
+    margin-top: 10px;
+    text-align: center;
+}
+.header-navbar a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    /* text-transform: uppercase; */
+}
+.header-navbar a.on-page-active{
+    color: #FE7272;
+}
+/*Section main content articel*/
+.main-content{
+    margin-top: 160px;
+}
+.main-content-card-articles {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    transition: 3s;
+}
+
+.main-content-card-article {
+    padding: 20px;
+    background-color: #D9D9D9;
+    margin: 0 20px 40px 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 11px #eaf0f6;
+}
+
+.main-content-card-article img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-content-card-article h4{
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.main-content-card-article p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-align: left;
+    font-size: 14px;
+}
+.main-content-card-article a{
+    text-decoration: none;
+    color: #C16565;
+    font-weight: bold;
+    font-size: 14px;
+}
+.main-content-load-more{
+    display: block;
+    margin: 0 auto 60px auto;
+    background-color:#963751;
+    border: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+/*footer*/
+.footer{
+    /* background-color: #FE7272; */
+    background: linear-gradient(to right, #FE7272, #ec5b5b);
+    padding: 30px;
+    margin-top: 50px;
+}
+.footer-copyright{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+/* form styling */
+
+.my-form-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-form-container h2 {
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    margin-bottom: 20px;
+}
+
+.inner-form{
+    background-color: var(--my-background-color);
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.my-form {
+    width: 95%;
+    margin-top: 80px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.inputan {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    height: 45px;
+}
+
+.txt-gambar {
+    margin-left: -8px;
+}
+
+.my-form label {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 26px;
+}
+
+.my-form input{
+    width: 70%;
+    border-radius: 25px;
+    border: 0px;
+}
+
+.input-form{
+    padding: 0 10px;
+}
+
+.input-area {
+    width: 70%;
+    padding: 10px;
+    border-radius: 25px;
+    height: 120px;
+}
+
+.txt-gambar {
+    margin-top: 70px;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit button {
+    background-color: var(--color-button);
+    width: 150px;
+    color: white;
+    border: 0px;
+    font-family: 'Jaldi', sans-serif;
+    border-radius: 25px;
+    font-size: 26px;
+}
+
+/* end form styling */
+
+/* detail page styling */
+
+.detail-page-container {
+    /* background-color: var(--my-background-color); */
+    margin-top: 150px;
+    width: 83%;
+}
+.main-detail {
+    width: 100%;
+    display: flex;
+    margin-left: -10px;
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+.main-detail h3 {
+    line-height: 1.3em;
+}
+
+.main-detail h6 {
+    color: rgb(130, 130, 127, 0.8);
+    margin-top: 10px;
+}
+
+.main-detail img {
+    width: 60%;
+    height: 500px;
+    display: block;
+    margin: 10px auto 40px auto;
+}
+
+.main-detail p {
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.detail-article button{
+    background-color: white;
+    border: none;
+    color:#963751;
+    padding: 0 8px 0 0;
+    margin:0 8px 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    border-right: 1px solid;
+}
+.detail-article button:hover{
+    text-decoration: underline;
+}
+.footer-content-logo {
+}
+
+.bagikan h6 {
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.8);
+    font-family: 'Jaldi', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.report h6 {
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.8);
+    font-family: 'Jaldi', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logo-medsos {
+    display: flex;
+    margin-left: -5px;
+}
+
+.logo-medsos img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.logo-medsos img:hover{
+    cursor: pointer;
+}
+/* end detail page */
+/*about page*/
+.main-content.about h1{
+    padding: 8px;
+    background-color: #4B4848;
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border-radius: 25px;
+    margin-bottom: 40px;
+}

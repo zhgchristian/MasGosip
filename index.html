@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portal Gosip</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container container">
+            <img class="header-container_logo" src="img/logo-website.svg">
+            <input id="txt-search" class="header-container_search" placeholder="Yuk cari berita gosip anda disini ...."
+                type="text" name="search-form">
+            <button class="header-container_button" id="button-search">Cari</button>
+        </div>
+        <div class="header-navbar">
+            <a href="index.html" class="on-page-active">Home</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+    <div class="main-content" id="main-content">
+        <div class="container">
+            <!--ini untuk section artikel-->
+            <div class="main-content-card-articles" id="body-article" style="height: 1080px; overflow: hidden;">
+            </div>
+            <button id="load-more" class="main-content-load-more" onclick="buttonLoadMore()">Cek gosip lainnya</button>
+            <!--End of section artikel-->
+            <!-- start form Tambah Berita Gosip -->
+            <div class="container-fluid my-form-container">
+                <h2 class="h2">Yuk tambahkan berita gosip anda</h2>
+                <div class="inner-form">
+                    <form class="container-fluid my-form" id="form-tambah-gosip" name="form-tambah-gosip">
+                        <div class="inputan">
+                            <label>Nama Penulis</label>
+                            <input type="text" class="input-form" id="txt-penulis" name="txt-penulis">
+                        </div>
+                        <div class="inputan">
+                            <label>Judul</label>
+                            <input type="text" class="input-form" id="txt-judul" name="txt-judul">
+                        </div>
+                        <div class="inputan">
+                            <label>Deskripsi</label>
+                            <textarea name="txt-desc" id="txt-desc" cols="30" rows="10" class="input-area"></textarea>
+                        </div>
+                        <div class="inputan txt-gambar">
+                            <label>Tambahkan Link Gambar</label>
+                            <input type="text" class="input-form" id="txt-link-img" name="txt-link-img">
+                        </div>
+                        <div class="inputan submit">
+                            <button type="submit" id="btn-send" name="btn-send">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- end form Tambah Berita Gosip -->
+        </div>
+    </div>
+    <div id="detail-page" class="detail-page-container container-fluid" style="display:none">
+        <div class="container-fluid main-detail" id="container-content">
+            
+        </div>
+        <hr>
+        <div class="footer-content-logo">
+            <div class="bagikan">
+                <h6 class="h6">SHARE</h6>
+                <div class="logo-medsos">
+                    <a target="_blank" href="https://id-id.facebook.com/"><img src="./img/fb.svg" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/"><img src="./img/ig.svg" alt=""></a>
+                    <a target="_blank" href="https://twitter.com/"><img src="./img/twit.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+            </div>
+            <p class="footer-copyright">Hackathon H8.2023</p>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/backend.js"></script>
+</body>
+
+</html>

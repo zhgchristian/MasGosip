@@ -1,0 +1,7 @@
+penamaan class:
+
+Rules:
+
+Parent: nama di sesuaikan dengan konten yang akan di isi, contoh: class="card-berita"
+Child: penamaan child di awali dengan class parentnya lalu di ikuti dengan kebutuhan elemennya, contoh: class="card-berita-desc"
+elemen di dalam child: penamaan nya di awali dengan class parent dan juga child di ikuti dengan kebutuhan elemennya, contoh: class="card-berita-desc_icon"
